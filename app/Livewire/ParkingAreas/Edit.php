@@ -5,7 +5,9 @@ namespace App\Livewire\ParkingAreas;
 use App\Livewire\Forms\ParkingAreaForm;
 use App\Models\ParkingArea;
 use Livewire\Component;
+use Livewire\Attributes\Title;
 
+#[Title('Parking Area Edit')]
 class Edit extends Component
 {
     public ParkingAreaForm $form;
