@@ -18,11 +18,11 @@
                         @endif
                         <td class="px-6 py-4">{{ $value }}</td>
                     @endforeach
-                    <td class="px-6 py-4 text-right">
-                        <button class="font-medium text-red-600 dark:text-red-500 hover:underline"
+                    <td class="px-6 py-4 text-right inline-flex rounded-md shadow-sm">
+                        <a href="#" class="px-4 py-2 text-sm font-medium text-blue-700 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white"
                             wire:click="delete({{ $parkingArea->id }})"
                             wire:confirm="Are you sure you want to delete this parking area?">Delete</button>
-                        <a class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                        <a class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white"
                             href="{{ route('edit', ['id' => $parkingArea->id]) }}">Edit</a>
                     </td>
                 </tr>
@@ -47,7 +47,7 @@
                         @endif
                     @endforeach
                     <td class="px-6 py-4 text-right">
-                        <button class="font-medium text-green-600 dark:text-green-500 hover:underline"
+                        <button class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800 w-full"
                             type="submit">Save</button>
                     </td>
                 </form>
