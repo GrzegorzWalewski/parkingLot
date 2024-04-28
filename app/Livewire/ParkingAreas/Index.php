@@ -33,7 +33,6 @@ class Index extends Component
     {
         $parkingAreas = ParkingArea::paginate(10);
 
-
         return view('livewire.parking-areas.index', [
             'parkingAreas' => $parkingAreas
         ]);

@@ -14,7 +14,6 @@
             <p class="mt-2 text-xs text-red-600 dark:text-red-400">{{ $message }}</p>
         @enderror
 
-
         <label for="startDate">Start Date</label>
         <input
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mb-3"
@@ -24,7 +23,6 @@
             <p class="mt-2 text-xs text-red-600 dark:text-red-400">{{ $message }}</p>
         @enderror
 
-
         <label for="endDate">End Date</label>
         <input
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mb-3"
@@ -32,7 +30,6 @@
         @error('endDate')
             <p class="mt-2 text-xs text-red-600 dark:text-red-400">{{ $message }}</p>
         @enderror
-
 
         <label for="currency">Currency</label>
         <select
@@ -58,7 +55,6 @@
                     type="submit">Calculate</button>
             </div>
         </div>
-
     </form>
 
     @if ($result)

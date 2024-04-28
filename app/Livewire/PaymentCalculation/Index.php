@@ -9,7 +9,6 @@ use Livewire\Attributes\Validate;
 use Carbon\Carbon;
 use Livewire\Attributes\Title;
 
-
 #[Title('Payment Calculation')]
 class Index extends Component
 {

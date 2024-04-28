@@ -25,5 +25,4 @@ class Edit extends Component
 
         return redirect()->route('home');
     }
-
 }

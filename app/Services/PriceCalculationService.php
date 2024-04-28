@@ -83,6 +83,7 @@ class PriceCalculationService
     private function convertCurrency(float $price, string $currency, Carbon $endDate): float
     {
         $date = $endDate->format('Y-m-d');
+
         if ($endDate->isFuture()) {
             $date = 'latest';
         }
