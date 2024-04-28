@@ -3,9 +3,20 @@
   Parking Lot
 </h1>
 
+## Prequeries
+1. Create free [https://exchangeratesapi.io/](https://exchangeratesapi.io/) account and get API KEY.
+
+## Run project
+1. `git clone git@github.com:GrzegorzWalewski/parkingLot.git`
+2. `cd parkingLot`
+3. `docker-compose up -d --build`
+4. Fill your access_key in .env file `EXCHANGE_RATE_API_KEY=`
+5. Access project at [localhost:8000](http://localhost:8000)
+
 ## Available views
 - Parking Areas
-  ![obraz](https://github.com/GrzegorzWalewski/parkingLot/assets/25950627/7fd8e81d-6721-41f1-9afe-aa9d118f65c4)
+  ![obraz](https://github.com/GrzegorzWalewski/parkingLot/assets/25950627/26e7f36b-deb1-4fe6-be75-d2c46a96e664)
+
   - List of all parking areas
   - Delete/Edit buttons for each record
   - Form for adding new record
