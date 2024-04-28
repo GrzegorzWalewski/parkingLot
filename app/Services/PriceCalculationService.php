@@ -24,8 +24,8 @@ class PriceCalculationService
         }
 
         return [
-            'total' => round($totalPrice, 2),
-            'discounted' => round($dicountedPrice, 2),
+            'total' => round($totalPrice, 2) . ' ' . $currency,
+            'discounted' => round($dicountedPrice, 2) . ' ' . $currency,
             'showNotice' => $endDate->isFuture() && $currency !== 'USD',
         ];
     }

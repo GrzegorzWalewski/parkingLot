@@ -4,12 +4,15 @@ namespace App\Livewire\ParkingAreas;
 
 use App\Livewire\Forms\ParkingAreaForm;
 use Livewire\Component;
+use Livewire\WithPagination;
 use App\Models\ParkingArea;
 use Livewire\Attributes\Title;
 
 #[Title('Parking Areas')]
 class Index extends Component
 {
+    use WithPagination;
+
     public ParkingAreaForm $form;
 
     public function save()
@@ -28,7 +31,7 @@ class Index extends Component
     
     public function render()
     {
-        $parkingAreas = ParkingArea::all();
+        $parkingAreas = ParkingArea::paginate(10);
 
 
         return view('livewire.parking-areas.index', [
