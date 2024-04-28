@@ -42,6 +42,10 @@ class Index extends Component
         $startDate = Carbon::parse($this->startDate);
         $endDate = Carbon::parse($this->endDate);
         
-        $this->result = $priceCalculationService->calculatePrice($this->parkingAreaId, $startDate, $endDate, $this->currency);
+        try {
+            $this->result = $priceCalculationService->calculatePrice($this->parkingAreaId, $startDate, $endDate, $this->currency);
+        } catch (\Exception $e) {
+            $this->addError('access_key', "Failed to convert currency: Check your access key in .env file");
+        }
     }
 }

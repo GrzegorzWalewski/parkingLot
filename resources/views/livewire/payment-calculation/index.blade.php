@@ -57,6 +57,12 @@
         </div>
     </form>
 
+    @error('access_key')
+        <div wire:loading.remove class="mt-6 h-auto max-w-lg mx-auto text-center border p-4 mb-4 text-sm text-red-800 border-red-600 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+            {{ $message }}
+        </div>
+    @enderror
+
     @if ($result)
         <div wire:loading.remove class="h-auto max-w-lg mx-auto text-center border border-green-300 rounded-lg mt-6">
             <h2 class="text-4xl font-extrabold dark:text-white my-5">Result</h2>

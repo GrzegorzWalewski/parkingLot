@@ -32,9 +32,8 @@ class Index extends Component
     public function render()
     {
         $parkingAreas = ParkingArea::paginate(10);
+        $columns = ['id', 'name', 'weekday_price', 'weekend_price', 'discount'];
 
-        return view('livewire.parking-areas.index', [
-            'parkingAreas' => $parkingAreas
-        ]);
+        return view('livewire.parking-areas.index', compact('parkingAreas', 'columns'));
     }
 }
