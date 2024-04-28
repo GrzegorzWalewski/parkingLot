@@ -5,17 +5,19 @@
 
 ## Available views
 - Parking Areas
-  ![obraz](https://github.com/GrzegorzWalewski/parkingLot/assets/25950627/fa1faa98-6491-42b0-86ff-90ef40b98f51)
+  ![obraz](https://github.com/GrzegorzWalewski/parkingLot/assets/25950627/7fd8e81d-6721-41f1-9afe-aa9d118f65c4)
   - List of all parking areas
   - Delete/Edit buttons for each record
   - Form for adding new record
 - Edit parking area   
-    ![obraz](https://github.com/GrzegorzWalewski/parkingLot/assets/25950627/9db6a70a-107e-46dd-9eb0-168ee26c5f4c)
+    ![obraz](https://github.com/GrzegorzWalewski/parkingLot/assets/25950627/de24ada4-fe1e-4c56-8503-b72063dfb16c)
 - Payment Calculator   
-  ![obraz](https://github.com/GrzegorzWalewski/parkingLot/assets/25950627/35b03a41-623a-4729-8379-42527539b45a)
+  ![obraz](https://github.com/GrzegorzWalewski/parkingLot/assets/25950627/f0d8ae05-b0b2-48f6-8732-f8c3156fe018)
+
 
 ## Tech stack
 - PHP
 - Laravel
 - Livewire
 - flatpickr
+- tailwindCss
