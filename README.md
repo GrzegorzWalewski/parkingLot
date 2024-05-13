@@ -7,11 +7,17 @@
 1. Create free [https://exchangeratesapi.io/](https://exchangeratesapi.io/) account and get API KEY.
 
 ## Run project
-1. `git clone git@github.com:GrzegorzWalewski/parkingLot.git`
-2. `cd parkingLot`
-3. `docker-compose up -d --build`
-4. Fill your access_key in .env file `EXCHANGE_RATE_API_KEY=`
-5. Access project at [localhost:8000](http://localhost:8000)
+1. ```sh
+   git clone git@github.com:GrzegorzWalewski/parkingLot.git
+   ```
+3. ```sh
+   cd parkingLot
+   ```
+5. ```sh
+   docker-compose up -d --build
+   ```
+7. Fill your access_key in .env file `EXCHANGE_RATE_API_KEY=`
+8. Access project at [localhost:8000](http://localhost:8000)
 
 ## Available views
 - Parking Areas
